@@ -246,7 +246,7 @@ func (c *stringsBuilderChecker) find(v *types.Var) *stringsBuilderCandidate {
 	return nil
 }
 
-func (c *stringsBuilderChecker) untrack(v *types.Var, reason string) {
+func (c *stringsBuilderChecker) untrack(v *types.Var, _ string) {
 	index := -1
 	for i := range c.candidates {
 		if c.candidates[i].obj == v {

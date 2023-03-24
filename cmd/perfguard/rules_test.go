@@ -141,9 +141,8 @@ func compareTestResults(t *testing.T, annotations []testfile.Annotation, output 
 				}
 				matched = true
 				continue
-			} else {
-				unexected[loc] = append(unexected[loc], w)
 			}
+			unexected[loc] = append(unexected[loc], w)
 		}
 		if !matched {
 			unmatched[loc] = want

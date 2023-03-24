@@ -418,7 +418,7 @@ func (c *preallocChecker) find(v *types.Var) *preallocCandidate {
 	return candidate
 }
 
-func (c *preallocChecker) untrackByIndex(index int, reason string) {
+func (c *preallocChecker) untrackByIndex(index int, _ string) {
 	c.candidates[index] = c.candidates[len(c.candidates)-1]
 	c.candidates = c.candidates[:len(c.candidates)-1]
 }

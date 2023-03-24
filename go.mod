@@ -1,6 +1,6 @@
 module github.com/quasilyte/go-perfguard
 
-go 1.18
+go 1.20
 
 require (
 	github.com/cespare/subcmd v1.1.0
@@ -9,18 +9,18 @@ require (
 	github.com/go-toolsmith/astfmt v1.0.0
 	github.com/go-toolsmith/typep v1.0.2
 	github.com/google/go-cmp v0.5.9
-	github.com/google/pprof v0.0.0-20220829040838-70bd9ae97f40
-	github.com/quasilyte/go-ruleguard v0.0.0-20221010073910-ce1bf37a2cf8
-	github.com/quasilyte/go-ruleguard/dsl v0.3.21
+	github.com/google/pprof v0.0.0-20230323073829-e72429f035bd
+	github.com/quasilyte/go-ruleguard v0.3.19
+	github.com/quasilyte/go-ruleguard/dsl v0.3.22
 	github.com/quasilyte/perf-heatmap v0.0.0-20220127163051-47fae5341e3f
 	github.com/quasilyte/stdinfo v0.0.0-20220114132959-f7386bf02567
-	golang.org/x/tools v0.1.12
+	golang.org/x/tools v0.7.0
 )
 
 require (
-	github.com/quasilyte/gogrep v0.0.0-20221002170714-e78263da2dd3 // indirect
-	github.com/quasilyte/pprofutil v0.0.0-20220125111125-7b67e07006e9 // indirect
-	golang.org/x/exp/typeparams v0.0.0-20221002003631-540bb7301a08 // indirect
-	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
-	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
+	github.com/quasilyte/gogrep v0.5.0 // indirect
+	github.com/quasilyte/pprofutil v1.0.0 // indirect
+	golang.org/x/exp/typeparams v0.0.0-20230321023759-10a507213a29 // indirect
+	golang.org/x/mod v0.9.0 // indirect
+	golang.org/x/sys v0.6.0 // indirect
 )

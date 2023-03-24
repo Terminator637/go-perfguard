@@ -265,7 +265,7 @@ func (c *boolValuedMapChecker) isBoolValuedMap(typ types.Type) bool {
 	return ok && valueType.Kind() == types.Bool
 }
 
-func (c *boolValuedMapChecker) track(id *ast.Ident, v *types.Var, boolValueNode ast.Expr) {
+func (c *boolValuedMapChecker) track(_ *ast.Ident, v *types.Var, boolValueNode ast.Expr) {
 	c.candidates = append(c.candidates, boolValuedMapCandidate{
 		obj:           v,
 		boolValueNode: boolValueNode,
@@ -281,7 +281,7 @@ func (c *boolValuedMapChecker) find(v *types.Var) *boolValuedMapCandidate {
 	return nil
 }
 
-func (c *boolValuedMapChecker) untrack(v *types.Var, reason string) {
+func (c *boolValuedMapChecker) untrack(v *types.Var, _ string) {
 	index := -1
 	for i := range c.candidates {
 		if c.candidates[i].obj == v {

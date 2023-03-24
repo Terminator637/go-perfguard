@@ -48,7 +48,7 @@ func main() {
 	subcmd.Run(cmds)
 }
 
-func versionMain(args []string) {
+func versionMain(_ []string) {
 	if BuildCommit == "" {
 		fmt.Printf("perfguard built without version info\n")
 	} else {
@@ -57,7 +57,7 @@ func versionMain(args []string) {
 	}
 }
 
-func envMain(args []string) {
+func envMain(_ []string) {
 	varInfoList := []struct {
 		name    string
 		comment string
